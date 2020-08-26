@@ -8,8 +8,12 @@ import com.example.demo.mapper.CourseMapper;
 import com.example.demo.mapper.UdictMapper;
 import com.example.demo.mapper.UserMapper;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import javax.swing.*;
 
 @SpringBootTest
 class ShardingJdbcDemoApplicationTests {
@@ -71,7 +75,7 @@ class ShardingJdbcDemoApplicationTests {
         Course course = new Course();
         course.setCname("javademo1");
         //分库根据user_id
-        course.setUserId(111L);
+        course.setUserId(110L);
         course.setCstatus("Normal1");
         courseMapper.insert(course);
     }
