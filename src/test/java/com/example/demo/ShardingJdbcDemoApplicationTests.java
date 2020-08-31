@@ -62,7 +62,7 @@ class ShardingJdbcDemoApplicationTests {
     public void findUserDb() {
         QueryWrapper<User>  wrapper = new QueryWrapper<>();
         //设置userid值
-        wrapper.eq("user_id",465508031619137537L);
+        wrapper.eq("user_id",507137680866279425l);
         User user = userMapper.selectOne(wrapper);
         System.out.println(user);
     }
